@@ -4,14 +4,16 @@ import SignIn from './pages/SignIn';
 // import SignUp from './pages/SignUp';
 import GLobaStyle from './styles/global';
 
-import { AuthProvider } from './context/AuthContext';
+import ToastContainer from './components/ToastContainer';
+
+import AppProvider from './context/index';
 
 const App: React.FC = () => {
   return (
     <>
-      <AuthProvider>
+      <AppProvider>
         <SignIn />
-      </AuthProvider>
+      </AppProvider>
 
       <GLobaStyle />
     </>
